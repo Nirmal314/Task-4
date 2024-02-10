@@ -60,6 +60,29 @@ body {
 .profile-shadow {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
+.card-1-icon-body {
+  background-color: #fa5a7d;
+}
+.card-2-icon-body {
+  background-color: #ff947a;
+}
+.card-3-icon-body {
+  background-color: #3cd856;
+}
+.card-4-icon-body {
+  background-color: #bf83ff;
+}
+.card-1-icon-body,
+.card-2-icon-body,
+.card-3-icon-body,
+.card-4-icon-body {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 992px) {
   .d-min-md-none {
     display: none;
