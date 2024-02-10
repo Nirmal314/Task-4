@@ -6,6 +6,7 @@
 body {
   width: 100%;
   height: 100vh;
+  background-color: #f9fafb;
 }
 .w-full {
   width: 100%;
@@ -24,6 +25,11 @@ body {
 }
 .navbar-toggler:focus {
   box-shadow: none !important;
+}
+#sidebar,
+#navbar,
+#main-container {
+  transition: all 500ms ease;
 }
 .fs-sidebar {
   font-size: 18px;
