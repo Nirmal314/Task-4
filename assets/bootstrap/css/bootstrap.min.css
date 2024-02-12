@@ -3720,7 +3720,7 @@ fieldset:disabled .btn {
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
-  color: var(--bs-nav-link-color);
+  /* color: var(--bs-nav-link-color); */
   text-decoration: none;
   background: 0 0;
   border: 0;
@@ -3762,19 +3762,23 @@ fieldset:disabled .btn {
 .nav-tabs .nav-link {
   margin-bottom: calc(-1 * var(--bs-nav-tabs-border-width));
   border: var(--bs-nav-tabs-border-width) solid transparent;
-  border-top-left-radius: var(--bs-nav-tabs-border-radius);
-  border-top-right-radius: var(--bs-nav-tabs-border-radius);
+  /* border-top-left-radius: var(--bs-nav-tabs-border-radius); */
+  /* border-top-right-radius: var(--bs-nav-tabs-border-radius); */
 }
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
   isolation: isolate;
-  border-color: var(--bs-nav-tabs-link-hover-border-color);
+  /* border-color: var(--bs-nav-tabs-link-hover-border-color); */
+  border-color: transparent;
 }
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  color: var(--bs-nav-tabs-link-active-color);
-  background-color: var(--bs-nav-tabs-link-active-bg);
-  border-color: var(--bs-nav-tabs-link-active-border-color);
+  /* color: var(--bs-nav-tabs-link-active-color); */
+  color: white;
+  /* background-color: var(--bs-nav-tabs-link-active-bg); */
+  background-color: #5d5fef;
+  /* border-color: var(--bs-nav-tabs-link-active-border-color); */
+  border-color: transparent;
 }
 .nav-tabs .dropdown-menu {
   margin-top: calc(-1 * var(--bs-nav-tabs-border-width));
