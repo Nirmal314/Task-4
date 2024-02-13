@@ -1,12 +1,6 @@
 const sidebar = document.getElementById("sidebar");
 const navbar = document.getElementById("navbar");
 const mainContainer = document.getElementById("main-container");
-
-let isSidebaropen = false;
-let isMobileSidebaropen = false;
-
-mainContainer.style.marginLeft = "92px"
-
 const sidebarItems = document.querySelectorAll(".fs-sidebar");
 const sidebarTexts = document.querySelectorAll(".sidebar-nav-text");
 const sidebarIcons = document.querySelectorAll(".sidebar-icons");
@@ -15,14 +9,23 @@ const sidebarLi = document.querySelectorAll(".sidebar-li");
 const sidebarA = document.querySelectorAll(".sidebar-a");
 const sidebarCard = document.getElementById("sidebar-card");
 
+let isSidebaropen = false;
+let isMobileSidebaropen = false;
+
+mainContainer.style.marginLeft = "92px"
+
 sidebarTexts.forEach((sidebarText) => {
     sidebarText.style.display = "none"
 })
+
 sidebarUl.classList.add("p-3");
+
 sidebarA.forEach((a) => {
     a.classList.add("justify-content-center");
 })
+
 sidebarCard.style.display = "none";
+
 sidebar.classList.add("position-fixed");
 
 window.onload = () => {
@@ -44,8 +47,11 @@ const openSidebar = () => {
         sidebarIcons.forEach((sidebarIcon) => {
             sidebarIcon.style.marginRight = "20px"
         })
-        sidebarUl.classList.add("p-5");
+        sidebarUl.classList.add("px-5");
+        sidebarUl.classList.add("py-3");
+
         sidebarUl.classList.remove("p-3");
+
         sidebarA.forEach((a) => {
             a.classList.remove("justify-content-center");
         })
@@ -64,7 +70,9 @@ const openSidebar = () => {
             sidebarIcon.style.marginRight = "0"
         })
         sidebarUl.classList.add("p-3");
-        sidebarUl.classList.remove("p-5");
+        sidebarUl.classList.remove("px-5");
+        sidebarUl.classList.remove("py-3");
+
         sidebarA.forEach((a) => {
             a.classList.add("justify-content-center");
         })
@@ -124,8 +132,6 @@ function attachClickHandler() {
     }
 }
 
-// Initial call to attach appropriate click handler based on screen width
 attachClickHandler();
 
-// Event listener for window resize to update click handler
 window.addEventListener('resize', attachClickHandler);
