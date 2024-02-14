@@ -126,7 +126,7 @@
             <!-- ! ----------------------------------------------------------------------- -->
             <!-- !                                 navbar                                  -->
             <!-- ! ----------------------------------------------------------------------- -->
-            <nav id="navbar" class="navbar navbar-light bg-white">
+            <nav id="navbar" class="navbar overflow-x-hidden navbar-light bg-white">
                 <button id="pc-btn" onclick="openSidebar()" class="navbar-toggler border-0 outline-none" type="button"
                     aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -135,13 +135,13 @@
                     type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="nav-right" class="d-flex justify-content-center align-items-center gap-3">
-                    <form class="position-relative">
-                        <input class="form-control input-grey border-0 me-2 ps-5" type="search"
+                <div id="nav-right" class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+                    <form class="nav-right-i1 position-relative">
+                        <input class="form-control w-full input-grey border-0 me-2 ps-5" type="search"
                             placeholder="Search here..." aria-label="Search">
                         <img src="assets/images/search.svg" class="position-absolute input-position" />
                     </form>
-                    <button class="btn btn-outline-primary border-0 position-relative bg-notification">
+                    <button class="nav-right-i2 btn btn-outline-primary border-0 position-relative bg-notification">
                         <div class="position-absolute notification-dot"></div>
                         <i class="bi bi-bell text-warning fs-4"></i>
                     </button>
@@ -336,54 +336,54 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th class="text-muted fw-lighter" scope="col">#</th>
-                                            <th class="text-muted fw-lighter" scope="col">Name</th>
-                                            <th class="text-muted fw-lighter" scope="col">Join Date</th>
-                                            <th class="text-muted fw-lighter" scope="col">Actions</th>
+                                            <th class="text-muted text-nowrap fw-lighter" scope="col">#</th>
+                                            <th class="text-muted text-nowrap fw-lighter" scope="col">Name</th>
+                                            <th class="text-muted text-nowrap fw-lighter" scope="col">Join Date</th>
+                                            <th class="text-muted text-nowrap fw-lighter" scope="col">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th class="fw-normal" scope="row">01</th>
-                                            <td class="fw-normal">Stephen P. Osborn</td>
-                                            <td class="fw-normal">17 Jan, 2023</td>
-                                            <td class="fw-normal">
+                                            <th class="fw-normal text-nowrap" scope="row">01</th>
+                                            <td class="fw-normal text-nowrap">Stephen P. Osborn</td>
+                                            <td class="fw-normal text-nowrap">17 Jan, 2023</td>
+                                            <td class="fw-normal text-nowrap">
                                                 <i class="mx-2 bi bi-pencil-square text-primary"></i>
                                                 <i class="bi bi-trash3 text-danger"></i>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="fw-normal" scope="row">02</th>
-                                            <td class="fw-normal">Odessa G. Mettler</td>
-                                            <td class="fw-normal">13 Feb, 2023</td>
-                                            <td class="fw-normal">
+                                            <th class="fw-normal text-nowrap" scope="row">02</th>
+                                            <td class="fw-normal text-nowrap">Odessa G. Mettler</td>
+                                            <td class="fw-normal text-nowrap">13 Feb, 2023</td>
+                                            <td class="fw-normal text-nowrap">
                                                 <i class="mx-2 bi bi-pencil-square text-primary"></i>
                                                 <i class="bi bi-trash3 text-danger"></i>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="fw-normal" scope="row">03</th>
-                                            <td class="fw-normal">Judith H. Richards</td>
-                                            <td class="fw-normal">13 Feb, 2023</td>
-                                            <td class="fw-normal">
+                                            <th class="fw-normal text-nowrap" scope="row">03</th>
+                                            <td class="fw-normal text-nowrap">Judith H. Richards</td>
+                                            <td class="fw-normal text-nowrap">13 Feb, 2023</td>
+                                            <td class="fw-normal text-nowrap">
                                                 <i class="mx-2 bi bi-pencil-square text-primary"></i>
                                                 <i class="bi bi-trash3 text-danger"></i>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="fw-normal" scope="row">04</th>
-                                            <td class="fw-normal">Jack B. Perez</td>
-                                            <td class="fw-normal">10 Feb, 2023</td>
-                                            <td class="fw-normal">
+                                            <th class="fw-normal text-nowrap" scope="row">04</th>
+                                            <td class="fw-normal text-nowrap">Jack B. Perez</td>
+                                            <td class="fw-normal text-nowrap">10 Feb, 2023</td>
+                                            <td class="fw-normal text-nowrap">
                                                 <i class="mx-2 bi bi-pencil-square text-primary"></i>
                                                 <i class="bi bi-trash3 text-danger"></i>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="fw-normal" scope="row">05</th>
-                                            <td class="fw-normal">Chris B. Ryant</td>
-                                            <td class="fw-normal">10 Feb, 2023</td>
-                                            <td class="fw-normal">
+                                            <th class="fw-normal text-nowrap" scope="row">05</th>
+                                            <td class="fw-normal text-nowrap">Chris B. Ryant</td>
+                                            <td class="fw-normal text-nowrap">10 Feb, 2023</td>
+                                            <td class="fw-normal text-nowrap">
                                                 <i class="mx-2 bi bi-pencil-square text-primary"></i>
                                                 <i class="bi bi-trash3 text-danger"></i>
                                             </td>
@@ -418,8 +418,8 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th class="fw-normal py-3" scope="row">01</th>
-                                            <td class="fw-normal py-3">Home Decor Range</td>
+                                            <th class="fw-normal text-nowrap py-3" scope="row">01</th>
+                                            <td class="fw-normal text-nowrap py-3">Home Decor Range</td>
                                             <td class="">
                                                 <div class="progress" style="margin-top: 1.25rem;">
                                                     <div class="progress-bar progress-1-left" role="progressbar"
@@ -430,7 +430,7 @@
                                                         aria-valuemax="100"></div>
                                                 </div>
                                             </td>
-                                            <td class="fw-normal py-3">
+                                            <td class="fw-normal text-nowrap py-3">
                                                 <div class="rounded-3 progress-bar-1 d-flex justify-content-center align-content-center px-2 py-0"
                                                     style="width: 50px;">
                                                     <p class="mb-0">45%</p>
@@ -438,8 +438,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="fw-normal py-3" scope="row">02</th>
-                                            <td class="fw-normal py-3">Disney Princess Pink Bag 18'</td>
+                                            <th class="fw-normal text-nowrap py-3" scope="row">02</th>
+                                            <td class="fw-normal text-nowrap py-3">Disney Princess Pink Bag 18'</td>
                                             <td class="">
                                                 <div class="progress" style="margin-top: 1.25rem;">
                                                     <div class="progress-bar progress-2-left" role="progressbar"
@@ -450,7 +450,7 @@
                                                         aria-valuemax="100"></div>
                                                 </div>
                                             </td>
-                                            <td class="fw-normal py-3">
+                                            <td class="fw-normal text-nowrap py-3">
                                                 <div class="rounded-3 progress-bar-2 d-flex justify-content-center align-content-center px-2 py-0"
                                                     style="width: 50px;">
                                                     <p class="mb-0">29%</p>
@@ -458,8 +458,8 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="fw-normal py-3" scope="row">03</th>
-                                            <td class="fw-normal py-3">Bathroom Essentials</td>
+                                            <th class="fw-normal text-nowrap py-3" scope="row">03</th>
+                                            <td class="fw-normal text-nowrap py-3">Bathroom Essentials</td>
                                             <td class="">
                                                 <div class="progress" style="margin-top: 1.25rem;">
                                                     <div class="progress-bar progress-3-left" role="progressbar"
@@ -470,7 +470,7 @@
                                                         aria-valuemax="100"></div>
                                                 </div>
                                             </td>
-                                            <td class="fw-normal py-3">
+                                            <td class="fw-normal text-nowrap py-3">
                                                 <div class="rounded-3 progress-bar-3 d-flex justify-content-center align-content-center px-2 py-0"
                                                     style="width: 50px;">
                                                     <p class="mb-0">18%</p>
@@ -478,8 +478,8 @@
                                             </td>
                                         </tr>
                                         <tr class="">
-                                            <th class="fw-normal py-3" scope="row">04</th>
-                                            <td class="fw-normal py-3">Apple Smartwatches</td>
+                                            <th class="fw-normal text-nowrap py-3" scope="row">04</th>
+                                            <td class="fw-normal text-nowrap py-3">Apple Smartwatches</td>
                                             <td class="">
                                                 <div class="progress" style="margin-top: 1.25rem;">
                                                     <div class="progress-bar progress-4-left" role="progressbar"
@@ -490,7 +490,7 @@
                                                         aria-valuemax="100"></div>
                                                 </div>
                                             </td>
-                                            <td class="fw-normal py-3">
+                                            <td class="fw-normal text-nowrap py-3">
                                                 <div class="rounded-3 progress-bar-4 d-flex justify-content-center align-content-center px-2 py-0"
                                                     style="width: 50px;">
                                                     <p class="mb-0">25%</p>

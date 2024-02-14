@@ -60,7 +60,10 @@ const openSidebar = () => {
 
         sidebar.classList.remove("position-fixed");
         sidebar.classList.add("position-absolute");
-
+        if (window.innerWidth < 991) {
+            navbar.classList.remove("justify-content-between");
+            navbar.classList.add("justify-content-center");
+        }
         isSidebaropen = true
     } else {
         sidebarTexts.forEach((sidebarText) => {
@@ -81,6 +84,10 @@ const openSidebar = () => {
 
         sidebar.classList.remove("position-absolute");
         sidebar.classList.add("position-fixed");
+        if (window.innerWidth < 991) {
+            navbar.classList.add("justify-content-between");
+            navbar.classList.remove("justify-content-center");
+        }
 
         isSidebaropen = false
     }
